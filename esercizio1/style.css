@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+}
+
+header img{
+  height: 100px;
+  width: 150px;
+}
+
+#container img{
+  height: 250px;
+  width: 200px;
+}
+
+#container{
+  background-color: darkgrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20vh 15vw;
+}
+
+.albums{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.alb-info {
+  margin-left: 30px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 30px;
+}
