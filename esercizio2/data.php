@@ -41,6 +41,24 @@
       ]
   ];
 
-  echo json_encode($database);
+  $singer = $_GET["singer"];
+
+  $res = [];
+
+  for ($i=0; $i < count($database); $i++) {
+
+    $author = $database[$i];
+
+    if ($singer === "All") {
+
+      $res = $database; //$res perche se metto [] diventa array di database che è gia array
+
+    } elseif ($author["author"] === $singer) {
+      $res[] = $author; //$res[] perche sara un array
+    }
+
+  }
+
+  echo json_encode($res);
 
 ?>
